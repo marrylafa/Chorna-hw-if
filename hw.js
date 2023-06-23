@@ -8,10 +8,10 @@
 //     то виводити в консоль текст "Ми йдемо в інше кафе"
 //     (Змінні типу інтеджер містять кількість продуктів в наявності у вигляді вхідних даних)
 
-let hamburgers = 3;
+let hamburgers = 4;
 let potato = 1;
 
-if(hamburgers > 2 && potato > 0){
+if(hamburgers > 3 && potato > 0){
     console.log("Ми поїли")
 } else {
     console.log("Йдемо в інше кафе")
@@ -22,7 +22,7 @@ if(hamburgers > 2 && potato > 0){
 
 let price = 1115;
 
-if(price > 1000 && price < 1900){
+if(price > 999 && price < 1901){
     console.log("Ціна знаходиться в рамках між 1000 та 1900, становить " + price);
 } else {
     console.log ("Ціна не перебуває в рамках між 1000 та 1900, становить " + price);
@@ -33,10 +33,9 @@ if(price > 1000 && price < 1900){
 //     Результат виводити в консоль.
 
 let price1 = 1004;
-let result = price1>999 && price1<1901;
 
-//option 1
-if(result != true){
+// // //option 1
+if((price1>999 && price1<1901) != true){
     console.log("Ціна не знаходиться в межах 1000 та 1900, становить " + price1);
 } else{
     console.log("Ціна знаходиться в межах 1000 та 1900, становить " + price1);
@@ -44,10 +43,10 @@ if(result != true){
 
 
 //option2
-if(result = false){
-    console.log("Ціна не знаходиться в межах 1000 та 1900, становить " + price1);
-} else{
+if((price1>999 && price1<1901) == true){
     console.log("Ціна знаходиться в межах 1000 та 1900, становить " + price1);
+} else{
+    console.log("Ціна не знаходиться в межах 1000 та 1900, становить " + price1);
 }
 
 // За номером пори року вивести назву цієї пори року використовуючи оператор if-else-if
